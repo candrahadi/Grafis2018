@@ -60,7 +60,7 @@ public class Objek {
     GLUquadric q=glu.gluNewQuadric();
 
     glu.gluSphere(q, BODY_RADIUS, SLICES, STACKS);
-//    gl.glShadeModel(GL.GL_SMOOTH);
+    gl.glShadeModel(GL.GL_SMOOTH);
     }
      
      static void moon(GL gl)
