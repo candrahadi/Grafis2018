@@ -14,7 +14,6 @@ import javax.media.opengl.glu.GLU;
 import javax.media.opengl.glu.GLUquadric;
 
 public class GLRenderer implements GLEventListener {
-    //class vector untuk memudah vektor-isasi
 
     float x = 0;
 
