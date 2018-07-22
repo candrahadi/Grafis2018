@@ -11,7 +11,10 @@ import javax.media.opengl.GLEventListener;
 import javax.media.opengl.glu.GLU;
 import com.sun.opengl.util.Animator;
 import java.awt.Dimension;
+import java.awt.DisplayMode;
 import java.awt.EventQueue;
+import java.awt.GraphicsEnvironment;
+import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -32,7 +35,7 @@ import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 
 
-public class Pertemuan_4 extends JFrame {
+public class M83 extends JFrame {
     static {
     // When using a GLCanvas, we have to set the Popup-Menues to be HeavyWeight,
     // so they display properly on top of the GLCanvas
@@ -40,7 +43,8 @@ public class Pertemuan_4 extends JFrame {
     }
     private Animator animator;
     
-    public Pertemuan_4() {
+    
+    public M83() {
  initComponents();
  final GLRenderer glrender = new GLRenderer();
  KeyListener mylisterner = new KeyListener() {
@@ -181,12 +185,12 @@ UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
 Logger.getLogger(getClass().getName()).log(Level.INFO, "can not enable system look and feel", ex);
  }
- Pertemuan_4 frame = new Pertemuan_4();
+ M83 frame = new M83();
  frame.setVisible(true);
  }
  });
  }
  // Variables declaration - do not modify//GEN-BEGIN:variables
  private GLCanvas canvas;
-
+ private GLCapabilities caps;
 }
