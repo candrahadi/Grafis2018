@@ -15,9 +15,9 @@ import javax.media.opengl.glu.GLUquadric;
 
 public class GLRenderer implements GLEventListener {
     //class vector untuk memudah vektor-isasi
-    
+
     float x = 0;
-    
+
     class vector {
 
         float x;
@@ -82,7 +82,6 @@ public class GLRenderer implements GLEventListener {
     float silinderAngle2 = 0f;
 
     boolean ori = true, silinder = false, kamera = false;
-    public Texture matahari, bumi;
 
     /*
  ini adalah metod untuk melakukan pergerakan.
@@ -150,7 +149,7 @@ digunakan untuk menentukan arah.
                 + gl.getClass().getName());
 //  Enable VSync
         gl.setSwapInterval(1);
-        
+
         float ambient[] = {1.0f, 1.0f, 1.0f, 1.0f};
         float diffuse[] = {1.0f, 1.0f, 1.0f, 1.0f};
         float position[] = {1.0f, 1.0f, 1.0f, 0.0f};
@@ -160,7 +159,7 @@ digunakan untuk menentukan arah.
         gl.glEnable(GL.GL_LIGHT0);
         gl.glEnable(GL.GL_LIGHTING);
         gl.glEnable(GL.GL_DEPTH_TEST);
-        gl.glClearColor(0f, 0f, 1.0f, 1.0f);
+//        gl.glClearColor(0f, 0f, 1.0f, 1.0f);
         gl.glShadeModel(GL.GL_SMOOTH);
         //gl.glShadeModel(GL.GL_SMOOTH); // try setting this to GL_FLAT and see what happens.
     }
@@ -185,7 +184,7 @@ digunakan untuk menentukan arah.
     public void display(GLAutoDrawable drawable) {
         GL gl = drawable.getGL();
         GLU glu = new GLU();
-        
+
         // Clear the drawing area
         gl.glClear(GL.GL_COLOR_BUFFER_BIT
                 | GL.GL_DEPTH_BUFFER_BIT);
@@ -196,7 +195,7 @@ digunakan untuk menentukan arah.
         glu.gluLookAt(Cx, Cy, Cz,
                 Lx, Ly, Lz,
                 vertikal.x, vertikal.y, vertikal.z);
-        
+
 //        gl.glPushMatrix();
         gl.glTranslatef(0f, 2f, -35f);
         gl.glRotatef(silinderAngle, 0, 1, 0);
@@ -205,7 +204,6 @@ digunakan untuk menentukan arah.
         gl.glPopMatrix();
 
         gl.glPushMatrix();
-//// Objek.earth(gl);
         gl.glPopMatrix();
 
         if (silinder) {
@@ -238,7 +236,7 @@ digunakan untuk menentukan arah.
             vectorMovement(samping, 2f, -1f);
         } //panah atas
         else if (keyCode == 38) {
-            silinderAngle += 0.01f;
+            silinderAngle2 -= 25f;
         } //panah bawah
         else if (keyCode == 40) {
             silinderAngle2 += 25f;
@@ -289,14 +287,7 @@ digunakan untuk menentukan arah.
             angle_samping2 = angle_samping;
         } //panah kanan
         else if (keyCode == 39) {
-            angle_depanBelakang -= 15f;
-
-            samping.vectorRotation(depanBelakang,
-                    angle_depanBelakang - angle_depanBelakang2);
-            vertikal.vectorRotation(depanBelakang,
-                    angle_depanBelakang - angle_depanBelakang2);
-            //cameraRotation(vertikal, angle_sampingangle_samping2);
-            angle_depanBelakang2 = angle_depanBelakang;
+            silinderAngle += 0.01f;
         } //panah kiri
         else if (keyCode == 37) {
             angle_depanBelakang += 15f;
