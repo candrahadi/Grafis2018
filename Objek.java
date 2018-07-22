@@ -488,17 +488,4 @@ public class Objek {
 //        gl.glRotatef(ring,1, 0,0);
 //        Objek.ring2(gl);
 //        gl.glPopMatrix();
-//        
-//        
-//        
-//        
-//        
-//        angle2+=direction2;
-//        angle+=direction;
-//        mercur+=direction3;
-//        venus+=direction4;
-//        mars+=direction5;
-//        jupiter+=direction6;
-//        saturn+=direction7;
-//    }
 }
