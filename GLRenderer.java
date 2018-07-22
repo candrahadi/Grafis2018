@@ -196,7 +196,6 @@ digunakan untuk menentukan arah.
                 Lx, Ly, Lz,
                 vertikal.x, vertikal.y, vertikal.z);
 
-//        gl.glPushMatrix();
         gl.glTranslatef(0f, 2f, -35f);
         gl.glRotatef(silinderAngle, 0, 1, 0);
         gl.glRotatef(silinderAngle2, 0, 0, 1);
@@ -213,7 +212,6 @@ digunakan untuk menentukan arah.
         if (kamera) {
             Key_Pressed(37);
         }
-
         gl.glFlush();
     }
 
