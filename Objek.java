@@ -488,4 +488,58 @@ public class Objek {
 //        gl.glRotatef(ring,1, 0,0);
 //        Objek.ring2(gl);
 //        gl.glPopMatrix();
+  ///////////////////////////////////////////////////
+    //        static void solar(GL gl) {
+////        float amb[] = {0.1f, 0f, 1, 1};
+////        float diff[] = {0.1f, 0f, 1, 1};
+////        float spec[] = {0.1f, 0f, 1, 1};
+////        float shine = 0;
+////        gl.glMaterialfv(GL.GL_FRONT, GL.GL_AMBIENT, amb, 0);
+////        gl.glMaterialfv(GL.GL_FRONT, GL.GL_DIFFUSE, diff, 0);
+////        gl.glMaterialfv(GL.GL_FRONT, GL.GL_SPECULAR, spec, 0);
+////        gl.glMaterialf(GL.GL_FRONT_AND_BACK, GL.GL_SHININESS, shine);
+// 
+//        gl.glPushMatrix();
+//        gl.glRotatef(angle, 0, 1f, 0f);
+//        Objek.sun(gl);
+//        gl.glRotatef(mercur, 0, 1, -0.12f);
+//        gl.glTranslatef(2.5f, 0, 0);
+//        Objek.mercury(gl); 
+//        gl.glPopMatrix();
+//        gl.glPushMatrix();
+//        gl.glRotatef(venus, 0, 1f, -0.1f);
+//        gl.glTranslatef(4f, 0, 0);
+//        Objek.venus(gl);
+//        gl.glPopMatrix();
+//        gl.glPushMatrix();
+//        gl.glRotatef(angle, 0, 1f, 0.1f);
+//        gl.glTranslatef(6f, 0, 0);
+//        Objek.earth(gl);
+//        gl.glPushMatrix();
+//        gl.glRotatef(angle2, 0f, 1f, 0f);
+//        gl.glTranslatef(-0.7f, 0, 0);
+//        Objek.moon(gl);
+//        gl.glPopMatrix();
+//        gl.glPopMatrix();
+//        gl.glPushMatrix();
+//        gl.glRotatef(mars, 0, 1f, -0.11f);
+//        gl.glTranslatef(8f, 0, 0);
+//        Objek.mars(gl);
+//        gl.glPopMatrix();
+//        gl.glPushMatrix();
+//        gl.glRotatef(jupiter, 0f, 1f, -0.11f);
+//        gl.glTranslatef(18f, 0, 0);
+//        Objek.jupiter(gl);
+//        gl.glPopMatrix();
+//        gl.glPushMatrix();
+//        gl.glRotatef(saturn, 0f, 1f, -0.10f);
+//        gl.glTranslatef(28f, 0, 0);
+//        Objek.saturn(gl);
+//        gl.glRotatef(ring, 1f, 0f, 0f);
+//        Objek.ring(gl);
+//        gl.glPopMatrix();
+//        gl.glPushMatrix();
+//        gl.glRotatef(ring,1, 0,0);
+//        Objek.ring2(gl);
+//        gl.glPopMatrix();
 }
