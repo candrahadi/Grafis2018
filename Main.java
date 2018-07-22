@@ -1,5 +1,4 @@
 package org.yourorghere;
-
 import com.sun.opengl.util.Animator;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
@@ -170,9 +169,7 @@ mode.
  return capabilities;
  }
 
- /**
- * @param args the command line arguments
- */
+
  public static void main(String args[]) {
  // Run this in the AWT event thread to prevent deadlocks and race conditions
  EventQueue.invokeLater(new Runnable() {
