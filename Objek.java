@@ -537,9 +537,5 @@ public class Objek {
 //        Objek.saturn(gl);
 //        gl.glRotatef(ring, 1f, 0f, 0f);
 //        Objek.ring(gl);
-//        gl.glPopMatrix();
-//        gl.glPushMatrix();
-//        gl.glRotatef(ring,1, 0,0);
-//        Objek.ring2(gl);
-//        gl.glPopMatrix();
+
 }
