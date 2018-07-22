@@ -370,21 +370,21 @@ public class Objek {
 
         gl.glPushMatrix();
         gl.glRotatef(angle, 0, 1f, 0f);
-        Objek.sun(gl);
+        Objek.sun(gl);           // Matahari
         gl.glRotatef(mercur, 0, 1, 0f);
         gl.glTranslatef(2.5f, 0, 0);
-        Objek.mercury(gl);
+        Objek.mercury(gl);      // Merkurius
         gl.glPopMatrix();
         gl.glPushMatrix();
         gl.glRotatef(venus, 0, 1f, 0f);
         gl.glTranslatef(4f, 0, 0);
-        Objek.venus(gl);
+        Objek.venus(gl);    //Venus
         gl.glPopMatrix();
         gl.glPushMatrix();
         gl.glRotatef(angle, 0, 1f, 0f);
         gl.glTranslatef(6f, 0, 0);
         gl.glRotatef(angle, 0, 1, 0.3f);
-        Objek.earth(gl);
+        Objek.earth(gl);  //--------------Bumii
         gl.glPushMatrix();
         gl.glRotatef(angle2, 0f, 1f, 0f);
         gl.glTranslatef(-0.7f, 0, 0);
