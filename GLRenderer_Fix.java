@@ -275,7 +275,7 @@ digunakan untuk menentukan arah.
             depanBelakang.vectorRotation(samping, angle_samping - angle_samping2);
             cameraRotation(samping, angle_samping - angle_samping2);
             angle_samping2 = angle_samping;
-        } //huruf K
+        } //huruf K ----------------------
         else if (keyCode == 75) {
             angle_samping += 15f;
 
@@ -283,10 +283,10 @@ digunakan untuk menentukan arah.
             depanBelakang.vectorRotation(samping, angle_samping - angle_samping2);
             cameraRotation(samping, angle_samping - angle_samping2);
             angle_samping2 = angle_samping;
-        } //panah kanan
+        } //panah kanan ---------------------
         else if (keyCode == 39) {
             silinderAngle += 0.01f;
-        } //panah kiri
+        } //panah kiri ----------------------
         else if (keyCode == 37) {
             angle_depanBelakang += 15f;
 
